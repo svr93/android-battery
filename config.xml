@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.shamsheev.androidbattery" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+    <name>AndroidBattery</name>
+    <!-- build:content --><content src="index.html" /><!-- endbuild -->
+    <engine name="android" spec="~5.2.1" />
+    <plugin name="cordova-plugin-crosswalk-webview" spec="~1.8.0">
+        <variable name="XWALK_VERSION" value="19" />
+    </plugin>
+    <plugin name="cordova-custom-config" spec="~2.0.3" />
+    <platform name="android">
+        <preference name="android-manifest/application/activity/@android:windowSoftInputMode" value="adjustPan" />
+    </platform>
+</widget>
