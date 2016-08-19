@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/karma/bin/karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/svr93/android-battery/issues"
   },
-  "homepage": "https://github.com/svr93/android-battery#readme"
+  "homepage": "https://github.com/svr93/android-battery#readme",
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "karma": "^0.12.37",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cordova-launcher": "0.0.9",
+    "karma-jasmine": "^1.0.2",
+    "karma-requirejs": "^1.0.0",
+    "requirejs": "^2.2.0"
+  }
 }
