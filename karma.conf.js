@@ -1,3 +1,5 @@
+const childProcess = require('child_process');
+
 module.exports = function(config) {
     'use strict';
 
@@ -9,6 +11,12 @@ module.exports = function(config) {
 
             platforms: [ 'android' ],
             mode: 'run',
+            target: `${ childProcess.spawnSync('adb', [
+
+                'shell',
+                'getprop',
+                'ro.product.model',
+            ]).stdout }`,
             plugins: [
 
                 'cordova-custom-config',
