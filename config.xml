@@ -9,5 +9,7 @@
     <plugin name="cordova-custom-config" spec="~2.0.3" />
     <platform name="android">
         <preference name="android-manifest/application/activity/@android:windowSoftInputMode" value="adjustPan" />
+        <access origin="http://192.168.*" />
     </platform>
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.2" />
 </widget>
