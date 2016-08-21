@@ -1,0 +1,26 @@
+{
+  "name": "android-battery",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vladimir Shamsheev"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/svr93/android-battery",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "www/js/vendor",
+    "test"
+  ],
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "almond": "^0.3.2",
+    "angular": "^1.5.8",
+    "selector-alias": "^1.0.0"
+  },
+  "devDependencies": {
+    "requirejs": "^2.2.0"
+  }
+}
